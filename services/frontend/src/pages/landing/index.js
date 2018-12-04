@@ -5,6 +5,8 @@ import Button from '@material-ui/core/Button'
 import Template from 'templates/default'
 import titleActions from 'templates/default/actions'
 import errorActions from 'templates/empty/actions'
+import styles from './styles'
+
 
 
 const mapStateToProps = () => ({})
@@ -20,11 +22,22 @@ class Landing extends Component {
   }
 
   render() {
+    console.log(styles)
     return (
       <Template>
-        <Button variant="contained" onClick={this.handleError}>
-          Landing
-        </Button>
+         <div style={styles.slika}>
+           <div style={styles.center}>
+             <div style={styles.text}>
+              <p>Never doubt that a small group of thoughtful, 
+              committed citizens can change the world; 
+              indeed, it is the only thing that ever has.</p>
+              <p>Welcome to Tilda Center!</p>
+             </div>
+             <Button variant="contained" onClick={this.handleError}>
+             LEARN MORE
+           </Button>
+           </div>
+         </div>
       </Template>
     )
   }
