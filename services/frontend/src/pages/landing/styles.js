@@ -1,4 +1,5 @@
 import background from './backgroundimage.svg'
+import firsticon from './prvaikonica.svg'
 
 export default {
   slika: {
@@ -42,5 +43,12 @@ export default {
 	  fontSize: '35px',
 	  
   },
-
+  
+  prvaikona: {
+	  backgroundImage: `url(${firsticon})`,
+	  display: 'flex',
+	  alighnItems: 'stretch',
+	  backgroundRepeat: 'no-repeat',
+	  height: 600,  
+   },
 }
