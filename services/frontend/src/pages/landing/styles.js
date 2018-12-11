@@ -14,13 +14,33 @@ export default {
       justifyContent: 'center',
       alignItems: 'center',
       height: '100%',
-      // backgroundColor: 'rgba(0, 255, 255, 0.75)',
+      //backgroundColor: 'rgba(0, 255, 255, 0.75)',
   },
   
-  text: {
+  prvitext: {
+	  padding: '10px',
       fontSize: '25px',
-      maxWidth: 600,
+      maxWidth: 900,
       textAlign: 'center',
-      backgroundColor: 'white',
+      color: '#e0e0e0',
+      backgroundColor: 'rgba(84, 0, 0, 0.8)',
+      borderRadius: '25px',
   },
+  
+  dugme: {
+	  marginTop: '10px',
+	  fontSize: '20px',
+  },
+  
+  drugidiv: {
+	  backgroundColor: '#e0e0e0',
+  },
+  
+  drugitext: {
+	  textAlign: 'center',
+	  padding: '50px',
+	  fontSize: '35px',
+	  
+  },
+
 }

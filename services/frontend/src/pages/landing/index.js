@@ -24,19 +24,35 @@ class Landing extends Component {
   render() {
     console.log(styles)
     return (
-      <Template>
+      <Template style={{ }}>
          <div style={styles.slika}>
            <div style={styles.center}>
-             <div style={styles.text}>
+             <div style={styles.prvitext}>
               <p>Never doubt that a small group of thoughtful, 
               committed citizens can change the world; 
               indeed, it is the only thing that ever has.</p>
               <p>Welcome to Tilda Center!</p>
              </div>
-             <Button variant="contained" onClick={this.handleError}>
+             <Button 
+               style={styles.dugme} 
+               variant="contained" 
+               onClick={this.handleError}
+             >
              LEARN MORE
            </Button>
            </div>
+         </div>
+         <div style={styles.drugidiv}>
+			 <div style={styles.drugitext}>
+			 WHAT WE DO AND HOW WE DO IT
+			 </div>
+			   <Button 
+				   style={styles.dugme} 
+				   variant="contained" 
+				   onClick={this.handleError}
+				 >
+				 LEARN MORE
+			   </Button>
          </div>
       </Template>
     )
